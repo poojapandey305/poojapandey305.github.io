@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pooja Pandey | Portfolio</title>
 
-
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 
   <style>
@@ -13,41 +12,62 @@
       font-family: Arial, sans-serif;
       background-color: #ffffff;
       color: #333;
-      max-width: 800px;
+      max-width: 900px;
       margin: 20px auto;
       padding: 20px;
+      line-height: 1.6;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
+    /* Navigation */
+    nav {
+      text-align: center;
+      background: #f8f8f8;
+      padding: 12px 0;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #005fa3;
     }
 
     .profile {
       text-align: center;
+      margin-bottom: 20px;
     }
 
     .profile img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
 
     h1 {
       font-family: 'Pacifico', cursive;
       font-size: 2.5rem;
-      margin-bottom: 0;
+      margin-bottom: 5px;
       color: #2c3e50;
     }
 
     h2 {
       color: #0077cc;
       margin-top: 30px;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 5px;
     }
 
     a {
       color: #0077cc;
-      text-decoration: none;
     }
 
     a:hover {
@@ -56,44 +76,75 @@
 
     .project-screenshot {
       border: 1px solid #ccc;
+      border-radius: 8px;
       margin-top: 10px;
-      border-radius: 6px;
+      width: 100%;
+      max-width: 700px;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <div class="profile">
-   
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="profile">
     <img src="profile.jpg" alt="Profile Picture" />
     <h1>Pooja Pandey</h1>
     <p>Full-Stack Developer</p>
-  </div>
+  </section>
 
-  <h2>About Me</h2>
-  <p>
-    I'm a full-stack developer with a strong curiosity for how things work — from the inner workings of everyday technology to the logic behind modern software systems. My passion for problem-solving, creativity, and building useful tools led me to explore coding in depth. After moving to the U.S., I fully committed to this path by completing LaunchCode’s full-stack program in 2025. Today, I enjoy creating user-friendly applications and solving real-world challenges through code.
-  </p>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a full-stack developer with a passion for understanding how technology works —
+      from everyday tools to complex web systems. I completed LaunchCode’s Full-Stack
+      program in 2025 and love creating clean, user-friendly, and efficient web
+      applications using modern frameworks like React.
+    </p>
+  </section>
 
-  <h2>Project</h2>
-  <p><strong>Urban Spice</strong> — A food ordering web app built using React.</p>
-  <p>
-    View on GitHub: 
-    <a href="https://github.com/poojapandey305/urban-spice" target="_blank">Urban Spice Repo</a>
-  </p>
-  
-  <img src="urban-spice-screenshot.jpg" alt="Urban Spice Screenshot" class="project-screenshot" />
+  <section id="projects">
+    <h2>Projects</h2>
+    <p><strong>Urban Spice</strong> — A food ordering web app built using React.</p>
+    <p>
+      View on GitHub:
+      <a href="https://github.com/poojapandey305/urban-spice" target="_blank">Urban Spice Repo</a>
+    </p>
+    <img src="urban-spice-screenshot.jpg" alt="Urban Spice Screenshot" class="project-screenshot" />
+  </section>
 
-  <h2>Resume</h2>
-  <p>
-    <a href="https://raw.githubusercontent.com/poojapandey305/urban-spice/main/Resume_Pooja_Pandey.pdf" target="_blank">
-      View My Resume (PDF)
-    </a>
-  </p>
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>
+      <a href="https://raw.githubusercontent.com/poojapandey305/urban-spice/main/Resume_Pooja_Pandey.pdf" target="_blank">
+        View My Resume (PDF)
+      </a>
+    </p>
+  </section>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:poojaam84@gmail.com">poojaam84@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/pooja-pandey-5b6427379/" target="_blank">My Profile</a></p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:poojaam84@gmail.com">poojaam84@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/pooja-pandey-5b6427379/" target="_blank">My Profile</a></p>
+  </section>
+
+  <footer>
+    © 2025 Pooja Pandey 
+  </footer>
 
 </body>
 </html>
