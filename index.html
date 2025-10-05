@@ -40,28 +40,43 @@
       color: #005fa3;
     }
 
+    /* Profile Section */
     .profile {
-      text-align: center;
-      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
     }
 
     .profile img {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
 
-    h1 {
+    .intro {
+      text-align: left;
+      max-width: 500px;
+    }
+
+    .intro h1 {
       font-family: 'Pacifico', cursive;
       font-size: 2.5rem;
       margin-bottom: 5px;
       color: #2c3e50;
     }
 
+    .intro p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
     h2 {
       color: #0077cc;
-      margin-top: 30px;
+      margin-top: 40px;
       border-bottom: 2px solid #0077cc;
       padding-bottom: 5px;
     }
@@ -74,6 +89,7 @@
       text-decoration: underline;
     }
 
+    /* Project Screenshot */
     .project-screenshot {
       border: 1px solid #ccc;
       border-radius: 8px;
@@ -85,7 +101,7 @@
 
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 0.9rem;
       color: #666;
     }
@@ -101,12 +117,16 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- Profile Section -->
   <section id="home" class="profile">
-    <img src="profile.png" alt="Profile Picture" />
-    <h1>Pooja Pandey</h1>
-    <p>Full-Stack Developer</p>
+    <img src="profile.PNG" alt="Pooja Pandey Profile Picture" />
+    <div class="intro">
+      <h1>Pooja Pandey</h1>
+      <p>Full-Stack Developer</p>
+    </div>
   </section>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -117,6 +137,7 @@
     </p>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
     <p><strong>Urban Spice</strong> — A food ordering web app built using React.</p>
@@ -124,18 +145,20 @@
       View on GitHub:
       <a href="https://github.com/poojapandey305/urban-spice" target="_blank">Urban Spice Repo</a>
     </p>
-    <img src="urban-spice-screenshot.jpg" alt="Urban Spice Screenshot" class="project-screenshot" />
+    <img src="urban-spice-screenshot.png" alt="Urban Spice Screenshot" class="project-screenshot" />
   </section>
-<section id="resume">
-  <h2>Resume</h2>
-  <p>
-    <a href="Resume_Pooja_Pandey.pdf" target="_blank">
-      View My Resume (PDF)
-    </a>
-  </p>
-</section>
- 
 
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>
+      <a href="Resume_Pooja_Pandey.pdf" target="_blank">
+        View My Resume (PDF)
+      </a>
+    </p>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:poojaam84@gmail.com">poojaam84@gmail.com</a></p>
